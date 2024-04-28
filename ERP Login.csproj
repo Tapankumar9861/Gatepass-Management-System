@@ -1,0 +1,1455 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B73AB1DD-2F86-44C2-84F1-9E3B223BD90F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERP_Login</RootNamespace>
+    <AssemblyName>ERP Login</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\img\blast.png" />
+    <Content Include="assets\img\business-card.png" />
+    <Content Include="assets\img\cycle-counting.png" />
+    <Content Include="assets\img\dq.jpg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\gate.png" />
+    <Content Include="assets\img\Hostel-Gate-Pass-Management-System.jpg" />
+    <Content Include="assets\img\How-to-Secure-Factories-With-Fully-Digitized-GatePass-Management-System-1-2.jpg" />
+    <Content Include="assets\img\images.jpeg" />
+    <Content Include="assets\img\img14.jpg" />
+    <Content Include="assets\img\Nova-Blog-5-1100x675.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-1.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-2.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-3.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-4.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-5.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-6.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-7.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-8.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-9.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-details-1.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-details-2.jpg" />
+    <Content Include="assets\img\portfolio\portfolio-details-3.jpg" />
+    <Content Include="assets\img\press-card.png" />
+    <Content Include="assets\img\press-pass.png" />
+    <Content Include="assets\img\team\team-1.jpg" />
+    <Content Include="assets\img\team\team-2.jpg" />
+    <Content Include="assets\img\team\team-3.jpg" />
+    <Content Include="assets\img\testimonials\testimonials-1.jpg" />
+    <Content Include="assets\img\testimonials\testimonials-2.jpg" />
+    <Content Include="assets\img\testimonials\testimonials-3.jpg" />
+    <Content Include="assets\img\testimonials\testimonials-4.jpg" />
+    <Content Include="assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="assets\img\verified.png" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\scss\Readme.txt" />
+    <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\vendor\boxicons\css\animations.css" />
+    <Content Include="assets\vendor\boxicons\css\boxicons.css" />
+    <Content Include="assets\vendor\boxicons\css\boxicons.min.css" />
+    <Content Include="assets\vendor\boxicons\css\transformations.css" />
+    <Content Include="assets\vendor\boxicons\fonts\boxicons.svg" />
+    <Content Include="assets\vendor\glightbox\css\glightbox.css" />
+    <Content Include="assets\vendor\glightbox\css\glightbox.min.css" />
+    <Content Include="assets\vendor\glightbox\css\plyr.css" />
+    <Content Include="assets\vendor\glightbox\css\plyr.min.css" />
+    <Content Include="assets\vendor\glightbox\js\glightbox.js" />
+    <Content Include="assets\vendor\glightbox\js\glightbox.min.js" />
+    <Content Include="assets\vendor\isotope-layout\isotope.pkgd.js" />
+    <Content Include="assets\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <Content Include="assets\vendor\php-email-form\validate.js" />
+    <Content Include="assets\vendor\purecounter\purecounter_vanilla.js" />
+    <Content Include="assets\vendor\swiper\swiper-bundle.min.css" />
+    <Content Include="assets\vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="Dashboard\assets\image\home.png" />
+    <Content Include="Dashboard\assets\image\id-card.png" />
+    <Content Include="Dashboard\assets\image\img14.jpg" />
+    <Content Include="Dashboard\assets\image\loupe.png" />
+    <Content Include="Dashboard\assets\image\next.png" />
+    <Content Include="Dashboard\assets\image\press-card.png" />
+    <Content Include="Dashboard\assets\image\press-pass.png" />
+    <Content Include="Dashboard\assets\image\scan.png" />
+    <Content Include="Dashboard\assets\image\settings.png" />
+    <Content Include="Dashboard\assets\style2.css" />
+    <Content Include="Dashboard\CameraPhoto.aspx" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fa-brands.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fa-brands.min.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fa-regular.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fa-regular.min.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fa-solid.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fa-solid.min.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fontawesome-all.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fontawesome-all.min.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fontawesome.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\css\fontawesome.min.css" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\css\material-design-iconic-font.css" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\css\materialdesignicons.min.css" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="Dashboard\css\icons\themify-icons\fonts\themify.svg" />
+    <Content Include="Dashboard\css\icons\themify-icons\ie7\ie7.css" />
+    <Content Include="Dashboard\css\icons\themify-icons\ie7\ie7.js" />
+    <Content Include="Dashboard\css\icons\themify-icons\themify-icons.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\css\weather-icons-core.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\css\weather-icons-variables.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\css\weather-icons-wind.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\css\weather-icons-wind.min.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\css\weather-icons.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\css\weather-icons.min.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-beaufort.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-day.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-direction.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-misc.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-moon.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-neutral.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-night.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-time.css" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\css\variables-wind-names.css" />
+    <Content Include="Dashboard\css\style.css" />
+    <Content Include="Dashboard\css\style.min.css" />
+    <Content Include="Dashboard\Dashboard_Gatepass_MS.aspx" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fa-brands.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fa-brands.min.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fa-regular.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fa-regular.min.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fa-solid.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fa-solid.min.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fontawesome-all.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fontawesome-all.min.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fontawesome.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\css\fontawesome.min.css" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\css\material-design-iconic-font.css" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\css\materialdesignicons.min.css" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\fonts\themify.svg" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\ie7\ie7.css" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\ie7\ie7.js" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\themify-icons.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\css\weather-icons-core.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\css\weather-icons-variables.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\css\weather-icons-wind.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\css\weather-icons-wind.min.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\css\weather-icons.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\css\weather-icons.min.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-beaufort.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-day.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-direction.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-misc.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-moon.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-neutral.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-night.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-time.css" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\css\variables-wind-names.css" />
+    <Content Include="Dashboard\dist\css\style.css" />
+    <Content Include="Dashboard\dist\css\style.min.css" />
+    <Content Include="Dashboard\dist\js\app-style-switcher.js" />
+    <Content Include="Dashboard\dist\js\custom.js" />
+    <Content Include="Dashboard\dist\js\custom.min.js" />
+    <Content Include="Dashboard\dist\js\jquery-ui.min.js" />
+    <Content Include="Dashboard\dist\js\jquery.ui.touch-punch-improved.js" />
+    <Content Include="Dashboard\dist\js\pages\calendar\cal-init.js" />
+    <Content Include="Dashboard\dist\js\pages\chart\chart-init.js" />
+    <Content Include="Dashboard\dist\js\pages\chart\chart-page-init.js" />
+    <Content Include="Dashboard\dist\js\pages\dashboards\dashboard1.js" />
+    <Content Include="Dashboard\dist\js\pages\maps\map-google.init.js" />
+    <Content Include="Dashboard\dist\js\pages\mask\mask.init.js" />
+    <Content Include="Dashboard\dist\js\pages\sparkline\jquery.charts-sparkline.js" />
+    <Content Include="Dashboard\dist\js\sidebarmenu.js" />
+    <Content Include="Dashboard\dist\js\waves.js" />
+    <Content Include="Dashboard\download.png" />
+    <Content Include="Dashboard\Everyday_Gatepass.aspx" />
+    <Content Include="Dashboard\Everyday_Gatepass_Card.aspx" />
+    <Content Include="Dashboard\Everyday_Gatepass_GridView.aspx" />
+    <Content Include="Dashboard\Everyday_Gatepass_Report.aspx" />
+    <Content Include="Dashboard\Gatepass_Card.aspx" />
+    <Content Include="Dashboard\Gatepass_Item.aspx" />
+    <Content Include="Dashboard\Gatepass_Item_Card.aspx" />
+    <Content Include="Dashboard\Gatepass_Item_Report.aspx" />
+    <Content Include="Dashboard\Gatepass_Reg.aspx" />
+    <Content Include="Dashboard\Gatepass_Reg_GridView.aspx" />
+    <Content Include="Dashboard\Gatepass_Item_GridView.aspx" />
+    <Content Include="Dashboard\Gatepass_Reg_Report.aspx" />
+    <Content Include="Dashboard\Qrcode_Reader.aspx" />
+    <Content Include="Dashboard\src\assets\extra-libs\calendar\calendar.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.bootstrap.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.bootstrap.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.bootstrap4.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.foundation.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.foundation.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.jqueryui.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.jqueryui.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.semanticui.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\dataTables.semanticui.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\jquery.dataTables.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\css\jquery.dataTables.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\images\sort_asc.png" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\images\sort_asc_disabled.png" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\images\sort_both.png" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\images\sort_desc.png" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\images\sort_desc_disabled.png" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.bootstrap.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.bootstrap.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.bootstrap4.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.foundation.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.foundation.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.jqueryui.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.jqueryui.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.semanticui.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\dataTables.semanticui.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\jquery.dataTables.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\DataTables-1.10.16\js\jquery.dataTables.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\datatables.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\datatables.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\datatables.min.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\DataTables\datatables.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\gritter\jquery.gritter.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\gritter\jquery.gritter.min.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\multicheck\datatable-checkbox-init.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\multicheck\jquery.multicheck.js" />
+    <Content Include="Dashboard\src\assets\extra-libs\multicheck\multicheck.css" />
+    <Content Include="Dashboard\src\assets\extra-libs\sparkline\sparkline.js" />
+    <Content Include="Dashboard\src\assets\images\background\error-bg.jpg" />
+    <Content Include="Dashboard\src\assets\images\background\img4.jpg" />
+    <Content Include="Dashboard\src\assets\images\background\img5.jpg" />
+    <Content Include="Dashboard\src\assets\images\background\img6.jpg" />
+    <Content Include="Dashboard\src\assets\images\big\img1.jpg" />
+    <Content Include="Dashboard\src\assets\images\big\img2.jpg" />
+    <Content Include="Dashboard\src\assets\images\big\img3.jpg" />
+    <Content Include="Dashboard\src\assets\images\big\img4.jpg" />
+    <Content Include="Dashboard\src\assets\images\big\img5.jpg" />
+    <Content Include="Dashboard\src\assets\images\big\img6.jpg" />
+    <Content Include="Dashboard\src\assets\images\custom-select.png" />
+    <Content Include="Dashboard\src\assets\images\favicon.png" />
+    <Content Include="Dashboard\src\assets\images\free-demo.jpg" />
+    <Content Include="Dashboard\src\assets\images\img12.png" />
+    <Content Include="Dashboard\src\assets\images\logo-icon.png" />
+    <Content Include="Dashboard\src\assets\images\logo-text.png" />
+    <Content Include="Dashboard\src\assets\images\logo.png" />
+    <Content Include="Dashboard\src\assets\images\logo1.jpeg" />
+    <Content Include="Dashboard\src\assets\images\users\1-old.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\1.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\1.png" />
+    <Content Include="Dashboard\src\assets\images\users\2.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\2.png" />
+    <Content Include="Dashboard\src\assets\images\users\3.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\3.png" />
+    <Content Include="Dashboard\src\assets\images\users\4.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\5.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\6.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\7.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\8.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\agent.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\agent2.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\d1.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\d2.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\d3.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\d4.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\d5.jpg" />
+    <Content Include="Dashboard\src\assets\images\users\profile.png" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\css\bootstrap-datepicker.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\css\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\css\bootstrap-datepicker3.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\js\bootstrap-datepicker.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker-en-CA.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ar-tn.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.bn.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.br.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.en-CA.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.en-IE.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.en-NZ.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.en-ZA.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.hi.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.km.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.oc.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.si.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.ta.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.tg.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.tk.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.uz-cyrl.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.uz-latn.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap-datepicker\dist\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.rtl.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.esm.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\chart.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\excanvas.min.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\jquery.flot.min.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\jquery.flot.pie.min.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\jquery.flot.resize.min.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\jquery.peity.min.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\jquery.ui.custom.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\matrix.charts.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\matrix.dashboard.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\matrix.interface.js" />
+    <Content Include="Dashboard\src\assets\libs\chart\turning-series.js" />
+    <Content Include="Dashboard\src\assets\libs\datatables.net-bs4\css\dataTables.bootstrap4.css" />
+    <Content Include="Dashboard\src\assets\libs\datatables.net-bs4\js\dataTables.bootstrap4.js" />
+    <Content Include="Dashboard\src\assets\libs\datatables\license.txt" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\css\jquery.dataTables.min.css" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\favicon.ico" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\sort_asc.png" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\sort_asc_disabled.png" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\sort_both.png" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\sort_desc.png" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\sort_desc_disabled.png" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\js\excanvas.min.js" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\js\jquery.flot.js" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\js\jquery.flot.tooltip.js" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\js\jquery.flot.tooltip.min.js" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\js\jquery.flot.tooltip.source.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\css\float-chart.css" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\annotating\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-interacting\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-multiple\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\date.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\background.png" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\basic-options\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\basic-usage\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\canvas\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\categories\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\examples.css" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\image\hs-2004-27-a-large-web.jpg" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\image\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\interacting\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\navigate\arrow-down.gif" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\navigate\arrow-left.gif" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\navigate\arrow-right.gif" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\navigate\arrow-up.gif" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\navigate\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\percentiles\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\realtime\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\resize\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\selection\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\series-errorbars\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\series-pie\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\series-toggle\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\series-types\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\shared\jquery-ui\jquery-ui.min.css" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\stacking\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\symbols\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\threshold\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\tracking\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\visitors\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\zooming\index.html" />
+    <Content Include="Dashboard\src\assets\libs\flot\excanvas.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\excanvas.min.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.colorhelpers.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.canvas.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.categories.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.crosshair.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.errorbars.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.fillbetween.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.image.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.navigate.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.pie.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.resize.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.selection.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.stack.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.symbol.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.threshold.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.flot.time.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\jquery.js" />
+    <Content Include="Dashboard\src\assets\libs\flot\LICENSE.txt" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\fullcalendar.print.min.css" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\gcal.min.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale-all.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\af.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar-dz.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar-kw.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar-ly.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar-ma.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar-sa.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar-tn.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ar.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\bg.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\bs.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ca.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\cs.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\da.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\de-at.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\de-ch.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\de.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\el.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\en-au.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\en-ca.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\en-gb.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\en-ie.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\en-nz.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\es-do.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\es-us.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\es.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\et.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\eu.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\fa.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\fi.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\fr-ca.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\fr-ch.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\fr.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\gl.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\he.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\hi.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\hr.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\hu.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\id.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\is.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\it.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ja.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ka.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\kk.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ko.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\lb.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\lt.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\lv.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\mk.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ms-my.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ms.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\nb.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\nl-be.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\nl.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\nn.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\pl.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\pt-br.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\pt.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ro.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\ru.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\sk.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\sl.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\sq.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\sr-cyrl.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\sr.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\sv.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\th.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\tr.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\uk.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\vi.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\zh-cn.js" />
+    <Content Include="Dashboard\src\assets\libs\fullcalendar\dist\locale\zh-tw.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\bindings\inputmask.binding.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\dependencyLibs\inputmask.dependencyLib.jqlite.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\dependencyLibs\inputmask.dependencyLib.jquery.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\dependencyLibs\inputmask.dependencyLib.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\global\document.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\global\window.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\inputmask.date.extensions.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\inputmask.extensions.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\inputmask.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\inputmask.numeric.extensions.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\inputmask.phone.extensions.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\inputmask.regex.extensions.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\jquery.inputmask.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\phone-codes\phone-be.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\phone-codes\phone-nl.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\phone-codes\phone-ru.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\phone-codes\phone-uk.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\inputmask\phone-codes\phone.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\jquery.inputmask.bundle.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\bindings\inputmask.binding.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\dependencyLibs\inputmask.dependencyLib.jqlite.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\dependencyLibs\inputmask.dependencyLib.jquery.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\dependencyLibs\inputmask.dependencyLib.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\global\document.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\global\window.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\inputmask.date.extensions.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\inputmask.extensions.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\inputmask.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\inputmask.numeric.extensions.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\inputmask.phone.extensions.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\inputmask.regex.extensions.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\jquery.inputmask.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\phone-codes\phone-be.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\phone-codes\phone-nl.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\phone-codes\phone-ru.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\phone-codes\phone-uk.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\inputmask\phone-codes\phone.min.js" />
+    <Content Include="Dashboard\src\assets\libs\inputmask\dist\min\jquery.inputmask.bundle.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\css\asColorPicker.min.css" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\images\alpha.png" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\images\hue.png" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\images\saturation.png" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\images\transparent.png" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\jquery-asColorPicker.es.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColorPicker\dist\jquery-asColorPicker.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\dist\jquery-asColor.es.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\dist\jquery-asColor.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\dist\jquery-asColor.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\asColor.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\colorStrings.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\converter.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\defaults.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\info.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\main.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\names.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\src\util.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\dist\jquery-asGradient.es.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\dist\jquery-asGradient.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\dist\jquery-asGradient.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\asGradient.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\colorStop.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\defaults.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\gradientString.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\gradientTypes.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\info.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\keywordAngleMap.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\main.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\regExpStrings.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\src\util.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-minicolors\index.html" />
+    <Content Include="Dashboard\src\assets\libs\jquery-minicolors\jquery.minicolors.css" />
+    <Content Include="Dashboard\src\assets\libs\jquery-minicolors\jquery.minicolors.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-minicolors\jquery.minicolors.png" />
+    <Content Include="Dashboard\src\assets\libs\jquery-minicolors\without-bootstrap.html" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\build\jquery.steps.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\jquery.steps.css" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\lib\jquery-1.10.2.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\lib\jquery-1.11.1.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\lib\jquery-1.9.1.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\lib\jquery.cookie-1.3.1.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\lib\modernizr-2.6.2.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\LICENSE.txt" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\nuget\NuGet.exe" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\steps.css" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\additional-methods.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ar.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_az.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_bg.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_bn_BD.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ca.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_cs.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_da.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_de.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_el.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_es.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_es_AR.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_es_PE.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_et.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_eu.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_fa.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_fi.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_fr.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ge.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_gl.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_he.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_hr.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_hu.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_hy_AM.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_id.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_is.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_it.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ja.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ka.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_kk.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ko.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_lt.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_lv.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_mk.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_my.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_nl.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_no.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_pl.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_pt_BR.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_pt_PT.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ro.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ru.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_sd.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_si.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_sk.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_sl.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_sr.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_sr_lat.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_sv.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_th.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_tj.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_tr.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_uk.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_ur.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_vi.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_zh.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\messages_zh_TW.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\methods_de.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\methods_es_CL.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\methods_fi.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\methods_nl.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery-validation\dist\localization\methods_pt.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery\dist\core.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery\dist\jquery.min.js" />
+    <Content Include="Dashboard\src\assets\libs\jquery\dist\jquery.slim.min.js" />
+    <Content Include="Dashboard\src\html\index2.html" />
+    <Content Include="index.html" />
+    <Content Include="Login\Dashboard.aspx" />
+    <Content Include="Login\Dashboard_Gatepass_MS.aspx" />
+    <Content Include="Login\ForgotPassword.aspx" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\main.js" />
+    <Content Include="Login\OtpVerification.aspx" />
+    <Content Include="Login\Register.aspx" />
+    <Content Include="Login\style.css" />
+    <Content Include="Login\style1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\CameraPhoto.aspx.cs">
+      <DependentUpon>CameraPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CameraPhoto.aspx.designer.cs">
+      <DependentUpon>CameraPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard_Gatepass_MS.aspx.cs">
+      <DependentUpon>Dashboard_Gatepass_MS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard_Gatepass_MS.aspx.designer.cs">
+      <DependentUpon>Dashboard_Gatepass_MS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass.aspx.cs">
+      <DependentUpon>Everyday_Gatepass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass.aspx.designer.cs">
+      <DependentUpon>Everyday_Gatepass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass_Card.aspx.cs">
+      <DependentUpon>Everyday_Gatepass_Card.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass_Card.aspx.designer.cs">
+      <DependentUpon>Everyday_Gatepass_Card.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass_GridView.aspx.cs">
+      <DependentUpon>Everyday_Gatepass_GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass_GridView.aspx.designer.cs">
+      <DependentUpon>Everyday_Gatepass_GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass_Report.aspx.cs">
+      <DependentUpon>Everyday_Gatepass_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Everyday_Gatepass_Report.aspx.designer.cs">
+      <DependentUpon>Everyday_Gatepass_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Card.aspx.cs">
+      <DependentUpon>Gatepass_Card.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Card.aspx.designer.cs">
+      <DependentUpon>Gatepass_Card.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item.aspx.cs">
+      <DependentUpon>Gatepass_Item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item.aspx.designer.cs">
+      <DependentUpon>Gatepass_Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item_Card.aspx.cs">
+      <DependentUpon>Gatepass_Item_Card.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item_Card.aspx.designer.cs">
+      <DependentUpon>Gatepass_Item_Card.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item_Report.aspx.cs">
+      <DependentUpon>Gatepass_Item_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item_Report.aspx.designer.cs">
+      <DependentUpon>Gatepass_Item_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Reg.aspx.cs">
+      <DependentUpon>Gatepass_Reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Reg.aspx.designer.cs">
+      <DependentUpon>Gatepass_Reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Reg_GridView.aspx.cs">
+      <DependentUpon>Gatepass_Reg_GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Reg_GridView.aspx.designer.cs">
+      <DependentUpon>Gatepass_Reg_GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item_GridView.aspx.cs">
+      <DependentUpon>Gatepass_Item_GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Item_GridView.aspx.designer.cs">
+      <DependentUpon>Gatepass_Item_GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Reg_Report.aspx.cs">
+      <DependentUpon>Gatepass_Reg_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Gatepass_Reg_Report.aspx.designer.cs">
+      <DependentUpon>Gatepass_Reg_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Qrcode_Reader.aspx.cs">
+      <DependentUpon>Qrcode_Reader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Qrcode_Reader.aspx.designer.cs">
+      <DependentUpon>Qrcode_Reader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Dashboard_Gatepass_MS.aspx.cs">
+      <DependentUpon>Dashboard_Gatepass_MS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Dashboard_Gatepass_MS.aspx.designer.cs">
+      <DependentUpon>Dashboard_Gatepass_MS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\OtpVerification.aspx.cs">
+      <DependentUpon>OtpVerification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\OtpVerification.aspx.designer.cs">
+      <DependentUpon>OtpVerification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dashboard\css\icons\font-awesome\less\fa-brands.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\fa-regular.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\fa-solid.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\fontawesome.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_animated.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_bordered-pulled.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_core.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_fixed-width.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_icons.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_larger.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_list.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_mixins.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_rotated-flipped.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_screen-reader.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_stacked.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\less\_variables.less" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\fa-brands.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\fa-regular.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\fa-solid.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\fontawesome.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_animated.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_core.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_icons.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_larger.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_list.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_mixins.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_stacked.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\scss\_variables.scss" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Dashboard\css\icons\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\css\materialdesignicons.min.css.map" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="Dashboard\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="Dashboard\css\icons\themify-icons\fonts\themify.eot" />
+    <Content Include="Dashboard\css\icons\themify-icons\fonts\themify.ttf" />
+    <Content Include="Dashboard\css\icons\themify-icons\fonts\themify.woff" />
+    <Content Include="Dashboard\css\icons\themify-icons\themify-icons.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="Dashboard\css\icons\weather-icons\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="Dashboard\css\icons\weather-icons\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="Dashboard\css\icons\weather-icons\fonts\weathericons-regular-webfont.woff2" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-beaufort.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-day.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-direction.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-misc.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-moon-aliases.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-moon.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-neutral.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-night.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-time.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-wind-aliases.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-wind-degrees.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-classes\classes-wind.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-beaufort.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-day.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-direction.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-misc.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-moon.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-neutral.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-night.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-time.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\icon-variables\variables-wind-names.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\mappings\wi-forecast-io.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\mappings\wi-owm.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\mappings\wi-wmo4680.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\mappings\wi-yahoo.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons-classes.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons-core.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons-variables.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons-wind.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons-wind.min.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\less\weather-icons.min.less" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-beaufort.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-day.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-direction.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-misc.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-moon-aliases.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-moon.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-neutral.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-night.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-time.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-wind-aliases.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-wind-degrees.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-classes\classes-wind.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-beaufort.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-day.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-direction.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-misc.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-moon.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-neutral.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-night.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-time.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\icon-variables\variables-wind-names.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\mappings\wi-forecast-io.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\mappings\wi-owm.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\mappings\wi-wmo4680.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\mappings\wi-yahoo.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons-classes.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons-core.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons-variables.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons-wind.min.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons-wind.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons.min.scss" />
+    <Content Include="Dashboard\css\icons\weather-icons\sass\weather-icons.scss" />
+    <Content Include="Dashboard\css\materialdesignicons.min.css.map" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\fa-brands.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\fa-regular.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\fa-solid.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\fontawesome.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_animated.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_bordered-pulled.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_core.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_fixed-width.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_icons.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_larger.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_list.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_mixins.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_rotated-flipped.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_screen-reader.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_stacked.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\less\_variables.less" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\fa-brands.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\fa-regular.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\fa-solid.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\fontawesome.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_animated.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_core.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_icons.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_larger.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_list.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_mixins.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_stacked.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\scss\_variables.scss" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Dashboard\dist\css\icons\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\css\materialdesignicons.min.css.map" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="Dashboard\dist\css\icons\material-design-iconic-font\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\fonts\themify.eot" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\fonts\themify.ttf" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\fonts\themify.woff" />
+    <Content Include="Dashboard\dist\css\icons\themify-icons\themify-icons.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\fonts\weathericons-regular-webfont.woff2" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-beaufort.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-day.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-direction.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-misc.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-moon-aliases.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-moon.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-neutral.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-night.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-time.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-wind-aliases.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-wind-degrees.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-classes\classes-wind.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-beaufort.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-day.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-direction.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-misc.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-moon.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-neutral.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-night.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-time.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\icon-variables\variables-wind-names.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\mappings\wi-forecast-io.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\mappings\wi-owm.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\mappings\wi-wmo4680.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\mappings\wi-yahoo.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons-classes.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons-core.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons-variables.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons-wind.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons-wind.min.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\less\weather-icons.min.less" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-beaufort.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-day.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-direction.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-misc.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-moon-aliases.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-moon.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-neutral.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-night.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-time.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-wind-aliases.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-wind-degrees.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-classes\classes-wind.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-beaufort.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-day.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-direction.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-misc.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-moon.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-neutral.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-night.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-time.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\icon-variables\variables-wind-names.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\mappings\wi-forecast-io.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\mappings\wi-owm.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\mappings\wi-wmo4680.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\mappings\wi-yahoo.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons-classes.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons-core.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons-variables.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons-wind.min.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons-wind.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons.min.scss" />
+    <Content Include="Dashboard\dist\css\icons\weather-icons\sass\weather-icons.scss" />
+    <Content Include="Dashboard\dist\css\materialdesignicons.min.css.map" />
+    <Content Include="Dashboard\src\assets\images\big\Thumbs.db" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Include="Dashboard\src\assets\libs\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="Dashboard\src\assets\libs\datatables\media\images\Sorting icons.psd" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\.bower.json" />
+    <Content Include="Dashboard\src\assets\libs\flot.tooltip\bower.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\.bower.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\.gitignore" />
+    <Content Include="Dashboard\src\assets\libs\flot\.travis.yml" />
+    <Content Include="Dashboard\src\assets\libs\flot\API.md" />
+    <Content Include="Dashboard\src\assets\libs\flot\component.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\CONTRIBUTING.md" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-eu-gdp-growth-1.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-eu-gdp-growth-2.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-eu-gdp-growth-3.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-eu-gdp-growth-4.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-eu-gdp-growth-5.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-eu-gdp-growth.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-japan-gdp-growth.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\ajax\data-usa-gdp-growth.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\africa" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\antarctica" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\asia" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\australasia" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\backward" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\etcetera" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\europe" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\factory" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\iso3166.tab" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\leapseconds" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\northamerica" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\pacificnew" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\solar87" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\solar88" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\solar89" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\southamerica" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\systemv" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\yearistype.sh" />
+    <Content Include="Dashboard\src\assets\libs\flot\examples\axes-time-zones\tz\zone.tab" />
+    <Content Include="Dashboard\src\assets\libs\flot\FAQ.md" />
+    <Content Include="Dashboard\src\assets\libs\flot\flot.jquery.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\Makefile" />
+    <Content Include="Dashboard\src\assets\libs\flot\NEWS.md" />
+    <Content Include="Dashboard\src\assets\libs\flot\package.json" />
+    <Content Include="Dashboard\src\assets\libs\flot\PLUGINS.md" />
+    <Content Include="Dashboard\src\assets\libs\flot\README.md" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\dist\jquery-asColor.min.js.map" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\LICENSE" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\package.json" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asColor\README.md" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\dist\jquery-asGradient.min.js.map" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\LICENSE" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\package.json" />
+    <Content Include="Dashboard\src\assets\libs\jquery-asGradient\README.md" />
+    <Content Include="Dashboard\src\assets\libs\jquery-minicolors\component.json" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\build\jquery.steps-1.1.0.zip" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\build\jQuery.Steps.1.1.0.nupkg" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\nuget\jQuery.Steps.nuspec" />
+    <Content Include="Dashboard\src\assets\libs\jquery-steps\steps.jquery.json" />
+    <Content Include="Dashboard\src\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\bootstrap-utilities.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\bootstrap.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_floating-labels.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_form-check.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_form-control.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_form-range.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_form-select.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_form-text.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_input-group.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_labels.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\forms\_validation.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_clearfix.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_colored-links.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_position.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_ratio.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_stretched-link.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_text-truncation.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\helpers\_visually-hidden.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_container.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_table-variants.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_utilities.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\mixins\_visually-hidden.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\utilities\_api.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_accordion.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_alert.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_badge.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_button-group.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_buttons.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_card.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_carousel.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_close.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_containers.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_dropdown.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_forms.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_functions.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_grid.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_helpers.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_images.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_list-group.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_mixins.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_modal.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_nav.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_navbar.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_pagination.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_popover.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_progress.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_reboot.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_root.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_spinners.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_tables.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_toasts.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_tooltip.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_transitions.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_type.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_utilities.scss" />
+    <Content Include="Dashboard\src\scss\bootstrap\_variables.scss" />
+    <Content Include="Dashboard\src\scss\components.scss" />
+    <Content Include="Dashboard\src\scss\core\animation\animation.scss" />
+    <Content Include="Dashboard\src\scss\core\breadcrumb\breadcrumb.scss" />
+    <Content Include="Dashboard\src\scss\core\buttons\buttons.scss" />
+    <Content Include="Dashboard\src\scss\core\core.scss" />
+    <Content Include="Dashboard\src\scss\core\extra\extra.scss" />
+    <Content Include="Dashboard\src\scss\core\layout\layout.scss" />
+    <Content Include="Dashboard\src\scss\core\loader\spinner.scss" />
+    <Content Include="Dashboard\src\scss\core\perfect-scrollbar\perfect-scrollbar.scss" />
+    <Content Include="Dashboard\src\scss\core\scafholdings\scafholding.scss" />
+    <Content Include="Dashboard\src\scss\core\sidebar\sidebar.scss" />
+    <Content Include="Dashboard\src\scss\core\tables\table-pages.scss" />
+    <Content Include="Dashboard\src\scss\core\topbar\header.scss" />
+    <Content Include="Dashboard\src\scss\core\topbar\notify.scss" />
+    <Content Include="Dashboard\src\scss\core\wave-effects\wave-effects.scss" />
+    <Content Include="Dashboard\src\scss\custom.scss" />
+    <Content Include="Dashboard\src\scss\mixins\padding-margin.scss" />
+    <Content Include="Dashboard\src\scss\pages.scss" />
+    <Content Include="Dashboard\src\scss\pages\dashboards\dashboard1.scss" />
+    <Content Include="Dashboard\src\scss\responsive.scss" />
+    <Content Include="Dashboard\src\scss\style.scss" />
+    <Content Include="Dashboard\src\scss\theme-colors\theme-colors.scss" />
+    <Content Include="Dashboard\src\scss\variable.scss" />
+    <Content Include="Dashboard\src\scss\widgets\chat-widgets.scss" />
+    <Content Include="Dashboard\src\scss\widgets\comments.scss" />
+    <Content Include="Dashboard\src\scss\widgets\feeds.scss" />
+    <Content Include="Dashboard\src\scss\widgets\gal-card.scss" />
+    <Content Include="Dashboard\src\scss\widgets\profile.scss" />
+    <Content Include="Dashboard\src\scss\widgets\steamline.scss" />
+    <Content Include="Dashboard\src\scss\widgets\task.scss" />
+    <Content Include="Dashboard\src\scss\widgets\widgets.scss" />
+    <Content Include="Dashboard\src\scss\_landingpage.scss" />
+    <Content Include="assets\img\Gate-Pass-Management-System.webp" />
+    <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.json" />
+    <Content Include="assets\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Include="assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="assets\vendor\boxicons\fonts\boxicons.eot" />
+    <Content Include="assets\vendor\boxicons\fonts\boxicons.ttf" />
+    <Content Include="assets\vendor\boxicons\fonts\boxicons.woff" />
+    <Content Include="assets\vendor\boxicons\fonts\boxicons.woff2" />
+    <Content Include="assets\vendor\purecounter\purecounter_vanilla.js.map" />
+    <Content Include="assets\vendor\swiper\swiper-bundle.min.js.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dashboard\Image\" />
+    <Folder Include="Dashboard\src\assets\libs\jquery.flot.tooltip\js\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50372</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+﻿.verify {
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#h5 {
+    text-align: center;
+}
+
+#in {
+    padding: 10%;
+}
+
+.re {
+    display: inline-flex;
+    margin: 10px;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-direction: row;
+}
+
+.card {
+    width: 350px;
+    height: 400px;
+    padding: 5px;
+    border-radius: 20px;
+    background: white;
+    border: 3px soild black;
+    position: relative;
+}

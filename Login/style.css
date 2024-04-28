@@ -1,0 +1,54 @@
+﻿body {
+    background: white;
+}
+
+.text-color {
+    color: black;
+}
+
+.card {
+    width: 350px;
+    padding: 5px;
+    border-radius: 20px;
+    background: white;
+    border: 3px soild black;
+    position: relative;
+}
+
+.container {
+    height: 100vh;
+}
+
+.email-text {
+    color: #cd5c5c;
+    font-size: 20x;
+}
+
+.form-control {
+    margin-right: 12px;
+}
+
+    .form-control:focus {
+        color: #495057;
+        background-color: #d4efdf;
+        border-color: #c0392b;
+        outline: 0;
+        box-shadow: none;
+    }
+
+.cursor {
+    cursor: pointer;
+}
+
+.verify {
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#in {
+    padding: 10%;
+}
+
+#h5 {
+    text-align: center;
+}

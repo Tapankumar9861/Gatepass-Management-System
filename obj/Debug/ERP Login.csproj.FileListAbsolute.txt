@@ -1,0 +1,75 @@
+E:\AHTS\Projects\ERP Login\bin\ERP Login.dll.config
+E:\AHTS\Projects\ERP Login\bin\ERP Login.dll
+E:\AHTS\Projects\ERP Login\bin\ERP Login.pdb
+E:\AHTS\Projects\ERP Login\bin\roslyn\csc.exe
+E:\AHTS\Projects\ERP Login\bin\roslyn\csc.exe.config
+E:\AHTS\Projects\ERP Login\bin\roslyn\csc.rsp
+E:\AHTS\Projects\ERP Login\bin\roslyn\csi.exe
+E:\AHTS\Projects\ERP Login\bin\roslyn\csi.exe.config
+E:\AHTS\Projects\ERP Login\bin\roslyn\csi.rsp
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.Managed.Core.targets
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\AHTS\Projects\ERP Login\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.AppContext.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Collections.Immutable.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Console.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Globalization.Calendars.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.IO.Compression.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.IO.FileSystem.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Net.Http.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Net.Sockets.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Reflection.Metadata.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.ValueTuple.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Xml.XmlDocument.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Xml.XPath.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\AHTS\Projects\ERP Login\bin\roslyn\vbc.exe
+E:\AHTS\Projects\ERP Login\bin\roslyn\vbc.exe.config
+E:\AHTS\Projects\ERP Login\bin\roslyn\vbc.rsp
+E:\AHTS\Projects\ERP Login\bin\roslyn\VBCSCompiler.exe
+E:\AHTS\Projects\ERP Login\bin\roslyn\VBCSCompiler.exe.config
+E:\AHTS\Projects\ERP Login\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\AHTS\Projects\ERP Login\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\AHTS\Projects\ERP Login\obj\Debug\ERP Login.csproj.AssemblyReference.cache
+E:\AHTS\Projects\ERP Login\obj\Debug\ERP Login.csproj.CoreCompileInputs.cache
+E:\AHTS\Projects\ERP Login\obj\Debug\ERP Login.csproj.CopyComplete
+E:\AHTS\Projects\ERP Login\obj\Debug\ERP Login.dll
+E:\AHTS\Projects\ERP Login\obj\Debug\ERP Login.pdb
+D:\tapan project\ERP Login\ERP Login\obj\Debug\ERP Login.csproj.AssemblyReference.cache
+D:\tapan project\ERP Login\ERP Login\obj\Debug\ERP Login.csproj.CoreCompileInputs.cache
+D:\tapan project\ERP Login\ERP Login\obj\Debug\ERP Login.dll
+D:\tapan project\ERP Login\ERP Login\obj\Debug\ERP Login.pdb
+D:\Project Complete\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.AssemblyReference.cache
+D:\Project Complete\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.CoreCompileInputs.cache
+D:\Project Complete\Gatepass\Gatepass\obj\Debug\ERP Login.dll
+D:\Project Complete\Gatepass\Gatepass\obj\Debug\ERP Login.pdb
+D:\Project Complete\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.AssemblyReference.cache
+D:\Project Complete\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.CoreCompileInputs.cache
+D:\Project Complete\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.dll
+D:\Project Complete\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.pdb
+D:\Project Complete\Gatepass (3)\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.AssemblyReference.cache
+D:\Project Complete\Gatepass (3)\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.CoreCompileInputs.cache
+D:\Project Complete\Gatepass (4)\Gatepass (3)\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.AssemblyReference.cache
+D:\Project Complete\Gatepass (4)\Gatepass (3)\Gatepass (3)\Gatepass\Gatepass\obj\Debug\ERP Login.csproj.CoreCompileInputs.cache
